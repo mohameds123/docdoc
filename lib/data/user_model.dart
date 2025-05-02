@@ -1,18 +1,18 @@
 class UserModel {
-  final String name;
+  final String? name;
   final String pass;
-  final String confirmationPass;
-  final String gender;
+  final String? confirmationPass;
+  final String? gender;
   final String email;
-  final String phone;
+  final String? phone;
 
   UserModel({
-    required this.name,
+     this.name,
     required this.pass,
-    required this.confirmationPass,
-    required this.gender,
+     this.confirmationPass,
+     this.gender,
     required this.email,
-    required this.phone,
+     this.phone,
   });
 
   factory UserModel.fromJson(Map<String, dynamic> json) {
